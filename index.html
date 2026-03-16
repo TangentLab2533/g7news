@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G7晚报网页电子版 - 开发中</title>
+    <style>
+        /* 全局样式重置 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* 页面背景与主体布局 */
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* 核心卡片容器 */
+        .container {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.1);
+            padding: 40px;
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+
+        /* 标题样式 */
+        .title {
+            font-size: 2.2rem;
+            color: #2d3748;
+            margin-bottom: 20px;
+            font-weight: 600;
+            position: relative;
+            display: inline-block;
+        }
+
+        .title::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: #4299e1;
+            border-radius: 3px;
+        }
+
+        /* 提示文本样式 */
+        .message {
+            font-size: 1.1rem;
+            color: #4a5568;
+            line-height: 1.8;
+            margin: 30px 0;
+        }
+
+        /* 邮箱样式高亮 */
+        .email {
+            color: #4299e1;
+            font-weight: 500;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .email:hover {
+            color: #2b6cb0;
+            text-decoration: underline;
+        }
+
+        /* 装饰性图标 */
+        .icon {
+            font-size: 4rem;
+            color: #4299e1;
+            margin-bottom: 20px;
+            opacity: 0.8;
+        }
+
+        /* 响应式适配 */
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+            }
+            .title {
+                font-size: 1.8rem;
+            }
+            .message {
+                font-size: 1rem;
+            }
+            .icon {
+                font-size: 3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon">⚙️</div>
+        <h1 class="title">G7晚报网页电子版 正在开发中</h1>
+        <p class="message">
+            暂时无法使用，您可以联系邮箱：<a href="mailto:tangent2533@gmail.com" class="email">tangent2533@gmail.com</a> 获得最新信息。<br>预计于2026.7.1开始开发。
+        </p>
+    </div>
+</body>
+</html>
